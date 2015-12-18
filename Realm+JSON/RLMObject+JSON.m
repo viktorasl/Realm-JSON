@@ -298,19 +298,20 @@ static NSInteger const kCreateBatchSize = 100;
     dispatch_once(&onceToken, ^{
         mappingForClassName = [NSMutableDictionary dictionary];
     });
-
-	NSDictionary *mapping = mappingForClassName[[self className]];
-	if (!mapping) {
-		SEL selector = NSSelectorFromString(@"JSONInboundMappingDictionary");
-		if ([self respondsToSelector:selector]) {
-			mapping = MCValueFromInvocation(self, selector);
-		}
-		else {
-			mapping = [self mc_defaultInboundMapping];
-		}
-		mappingForClassName[[self className]] = mapping;
-	}
-	return mapping;
+    @synchronized(mappingForClassName) {
+        NSDictionary *mapping = mappingForClassName[[self className]];
+        if (!mapping) {
+            SEL selector = NSSelectorFromString(@"JSONInboundMappingDictionary");
+            if ([self respondsToSelector:selector]) {
+                mapping = MCValueFromInvocation(self, selector);
+            }
+            else {
+                mapping = [self mc_defaultInboundMapping];
+            }
+            mappingForClassName[[self className]] = mapping;
+        }
+        return mapping;
+    }
 }
 
 + (NSDictionary *)mc_outboundMapping {
@@ -320,18 +321,20 @@ static NSInteger const kCreateBatchSize = 100;
         mappingForClassName = [NSMutableDictionary dictionary];
     });
 
-	NSDictionary *mapping = mappingForClassName[[self className]];
-	if (!mapping) {
-		SEL selector = NSSelectorFromString(@"JSONOutboundMappingDictionary");
-		if ([self respondsToSelector:selector]) {
-			mapping = MCValueFromInvocation(self, selector);
-		}
-		else {
-			mapping = [self mc_defaultOutboundMapping];
-		}
-		mappingForClassName[[self className]] = mapping;
-	}
-	return mapping;
+    @synchronized(mappingForClassName) {
+        NSDictionary *mapping = mappingForClassName[[self className]];
+        if (!mapping) {
+            SEL selector = NSSelectorFromString(@"JSONOutboundMappingDictionary");
+            if ([self respondsToSelector:selector]) {
+                mapping = MCValueFromInvocation(self, selector);
+            }
+            else {
+                mapping = [self mc_defaultOutboundMapping];
+            }
+            mappingForClassName[[self className]] = mapping;
+        }
+        return mapping;
+    }
 }
 
 + (RLMProperty *)mc_propertyForPropertyKey:(NSString *)key {
@@ -353,12 +356,14 @@ static NSInteger const kCreateBatchSize = 100;
             set = [NSCharacterSet characterSetWithCharactersInString:@"\"<"];
         });
 
-		NSString *string;
-		NSScanner *scanner = [NSScanner scannerWithString:attributes];
-		scanner.charactersToBeSkipped = set;
-		[scanner scanUpToCharactersFromSet:set intoString:NULL];
-		[scanner scanUpToCharactersFromSet:set intoString:&string];
-		return NSClassFromString(string);
+        @synchronized(set) {
+            NSString *string;
+            NSScanner *scanner = [NSScanner scannerWithString:attributes];
+            scanner.charactersToBeSkipped = set;
+            [scanner scanUpToCharactersFromSet:set intoString:NULL];
+            [scanner scanUpToCharactersFromSet:set intoString:&string];
+            return NSClassFromString(string);
+        }
 	}
 	return nil;
 }

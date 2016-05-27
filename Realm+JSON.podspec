@@ -3,6 +3,7 @@ Pod::Spec.new do |s|
   s.version  = '0.2.13'
   s.ios.deployment_target   = '7.0'
   s.osx.deployment_target = '10.9'
+  s.watchos.deployment_target = '2.0'
   s.license  = { :type => 'MIT', :file => 'LICENSE' }
   s.summary  = 'A concise Mantle-like way of working with Realm and JSON.'
   s.homepage = 'https://github.com/matthewcheok/Realm-JSON'

@@ -85,6 +85,16 @@ You should specify the inbound and outbound JSON mapping on your `RLMObject` sub
       };
     }
 
+JSON preprocessing can be done by implementing `jsonPreprocessing:` static method:
+
+```ObjC
+- (NSDictionary *)jsonPreprocessing:(NSDictionary *)dictionary {
+    NSMutableDictionary *dict = [[NSMutableDictionary alloc] initWithDictionary:dictionary];
+    dict[@"releaseCount"] = @(0);
+    return dict.copy;
+}
+```
+
 Leaving out either one of the above will result in a mapping that assumes camelCase for your properties which map to snake_case for the JSON equivalents.
 
 You can specify custom outbound mapping for each object as Realm does not support abstract data type in `RLMArray` (and sometimes back-end does not know how to serialise unknown properties):

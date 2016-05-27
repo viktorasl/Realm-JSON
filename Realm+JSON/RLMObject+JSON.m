@@ -211,7 +211,8 @@ static NSInteger const kCreateBatchSize = 100;
 				}
 				currentDictionary = [currentDictionary valueForKey:component];
 			}
-
+			
+            value = value ?: [NSNull null];
 			[result setValue:value forKeyPath:objectKeyPath];
 		}
 	}

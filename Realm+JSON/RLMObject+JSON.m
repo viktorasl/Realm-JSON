@@ -156,16 +156,23 @@ static NSInteger const kCreateBatchSize = 100;
 
 #pragma mark - Private
 
-+ (id)mc_createObjectFromJSONDictionary:(NSDictionary *)dictionary {
++ (id)mc_createObjectFromJSONDictionary:(NSDictionary *)origDict {
 	NSMutableDictionary *result = [NSMutableDictionary dictionary];
 	NSDictionary *mapping = [[self class] mc_inboundMapping];
 
 	for (NSString *dictionaryKeyPath in mapping) {
 		NSString *objectKeyPath = mapping[dictionaryKeyPath];
-
+		
+		NSDictionary *dictionary;
+		SEL preprocessingSel = NSSelectorFromString(@"preprocessedJSON:");
+		if ([self respondsToSelector:preprocessingSel]) {
+			dictionary = [self performSelector:preprocessingSel withObject:origDict];
+		} else {
+			dictionary = origDict;
+		}
 		id value = [dictionary valueForKeyPath:dictionaryKeyPath];
 
-		if (value) {
+        if (value) {
 			Class propertyClass = [[self class] mc_classForPropertyKey:objectKeyPath];
 
 			NSValueTransformer *transformer = [[self class] mc_transformerForPropertyKey:objectKeyPath];

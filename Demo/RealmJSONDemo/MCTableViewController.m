@@ -12,8 +12,8 @@
 #import <Realm/Realm.h>
 #import <Realm+JSON/RLMObject+JSON.h>
 
-#import <AFNetworking.h>
-#import <UIImageView+AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface MCTableViewController ()
 
@@ -27,21 +27,19 @@
 #pragma mark - Methods
 
 - (IBAction)reloadData {
-	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-	[manager GET:@"https://www.nsscreencast.com/api/episodes.json" parameters:nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
-	    NSArray *array = responseObject[@"episodes"];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            RLMRealm *realm = [RLMRealm defaultRealm];
-            
-            [realm beginWriteTransaction];
-            NSArray *result = [MCEpisode createOrUpdateInRealm:realm withJSONArray:array];
-            [realm commitWriteTransaction];
-            
-            NSLog(@"result: %@", result);
-        });
-	} failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
-	    NSLog(@"Error: %@", error);
-	}];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:@"https://www.nsscreencast.com/api/episodes.json" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray *array = responseObject[@"episodes"];
+        RLMRealm *realm = [RLMRealm defaultRealm];
+        
+        [realm beginWriteTransaction];
+        NSArray *result = [MCEpisode createOrUpdateInRealm:realm withJSONArray:array];
+        [realm commitWriteTransaction];
+        
+        NSLog(@"result: %@", result);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
 - (void)refreshData {

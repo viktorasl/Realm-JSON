@@ -23,3 +23,7 @@ DerivedData
 # CocoaPods
 Pods
 Podfile.lock
+
+Demo/Pods
+Demo/Podfile.lock
+Demo/RealmJSONDemo.xcodeproj/xcshareddata/xcschemes/

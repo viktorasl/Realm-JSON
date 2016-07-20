@@ -22,6 +22,7 @@
 		34D5F9CD1984ACD900BE1BBF /* RealmJSONDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9CC1984ACD900BE1BBF /* RealmJSONDemoTests.m */; };
 		34D5F9D81984AEE300BE1BBF /* MCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9D71984AEE300BE1BBF /* MCTableViewController.m */; };
 		34D5F9DB1984C84700BE1BBF /* MCEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9DA1984C84700BE1BBF /* MCEpisode.m */; };
+		6EDFE3801D3F4A0600FCC924 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDFE37F1D3F4A0600FCC924 /* Vehicle.m */; };
 		8684273554EE760330B40D15 /* libPods-RealmJSONDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6EB50CBEFB949FA6FD89B84 /* libPods-RealmJSONDemoTests.a */; };
 		E9CB8C710F77A01B799489C5 /* libPods-RealmJSONDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DFC1C6B6E80D4002614C5C8 /* libPods-RealmJSONDemo.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,8 @@
 		34D5F9D91984C84700BE1BBF /* MCEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCEpisode.h; sourceTree = "<group>"; };
 		34D5F9DA1984C84700BE1BBF /* MCEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCEpisode.m; sourceTree = "<group>"; };
 		3C19E3DAD25DC4E33B371209 /* Pods-RealmJSONDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		6EDFE37E1D3F4A0600FCC924 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		6EDFE37F1D3F4A0600FCC924 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 		8DFC1C6B6E80D4002614C5C8 /* libPods-RealmJSONDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmJSONDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		970782E9E7A985538894C200 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9F80327859858CFD52A2A997 /* Pods-RealmJSONDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +162,7 @@
 		34D5F9C61984ACD900BE1BBF /* RealmJSONDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				6EDFE37D1D3F493E00FCC924 /* Models */,
 				34D5F9CC1984ACD900BE1BBF /* RealmJSONDemoTests.m */,
 				34D5F9C71984ACD900BE1BBF /* Supporting Files */,
 			);
@@ -172,6 +176,15 @@
 				34D5F9C91984ACD900BE1BBF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6EDFE37D1D3F493E00FCC924 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EDFE37E1D3F4A0600FCC924 /* Vehicle.h */,
+				6EDFE37F1D3F4A0600FCC924 /* Vehicle.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9290BFDD1548386FF432BF83 /* Pods */ = {
@@ -240,11 +253,6 @@
 				CLASSPREFIX = MC;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Matthew Cheok";
-				TargetAttributes = {
-					34D5F9BE1984ACD900BE1BBF = {
-						TestTargetID = 34D5F99A1984ACD900BE1BBF;
-					};
-				};
 			};
 			buildConfigurationList = 34D5F9961984ACD800BE1BBF /* Build configuration list for PBXProject "RealmJSONDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -395,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EDFE3801D3F4A0600FCC924 /* Vehicle.m in Sources */,
 				34D5F9CD1984ACD900BE1BBF /* RealmJSONDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,7 +551,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9F80327859858CFD52A2A997 /* Pods-RealmJSONDemoTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealmJSONDemo.app/RealmJSONDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -557,7 +565,6 @@
 				INFOPLIST_FILE = "RealmJSONDemoTests/RealmJSONDemoTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -566,7 +573,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE7421B21728731805CA9564 /* Pods-RealmJSONDemoTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealmJSONDemo.app/RealmJSONDemo";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -577,7 +583,6 @@
 				INFOPLIST_FILE = "RealmJSONDemoTests/RealmJSONDemoTests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

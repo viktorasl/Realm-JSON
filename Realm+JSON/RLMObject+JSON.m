@@ -373,6 +373,29 @@ static NSInteger const kCreateBatchSize = 100;
             scanner.charactersToBeSkipped = set;
             [scanner scanUpToCharactersFromSet:set intoString:NULL];
             [scanner scanUpToCharactersFromSet:set intoString:&string];
+
+            // swift 3, because RLMArray (assumption is that it's because RLMArray is ObjC generic class)
+			// cannot be found
+			if (!string) {
+				RLMObjectSchema *schema = [self sharedSchema];
+				RLMProperty *objectProp = nil;
+				
+				for (RLMProperty *prop in schema.properties) {
+					if ([prop.name isEqualToString:key]) {
+						objectProp = prop;
+					}
+				}
+				
+				switch (objectProp.type) {
+					case RLMPropertyTypeArray: {
+						return [RLMArray class];
+					}
+					default: {
+						break;
+					}
+				}
+			}
+
             return NSClassFromString(string);
         }
 	}

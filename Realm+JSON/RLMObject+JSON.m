@@ -375,8 +375,8 @@ static NSInteger const kCreateBatchSize = 100;
             [scanner scanUpToCharactersFromSet:set intoString:&string];
 
             // swift 3, because RLMArray (assumption is that it's because RLMArray is ObjC generic class)
-			// cannot be found
-			if (!string) {
+			// cannot be found and property attributes contain reference identifier
+			if (!string && [attributes containsString:@"&"]) {
 				RLMObjectSchema *schema = [self sharedSchema];
 				RLMProperty *objectProp = nil;
 				

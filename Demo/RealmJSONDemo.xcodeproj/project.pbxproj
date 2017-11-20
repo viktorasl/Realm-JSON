@@ -22,9 +22,8 @@
 		34D5F9CD1984ACD900BE1BBF /* RealmJSONDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9CC1984ACD900BE1BBF /* RealmJSONDemoTests.m */; };
 		34D5F9D81984AEE300BE1BBF /* MCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9D71984AEE300BE1BBF /* MCTableViewController.m */; };
 		34D5F9DB1984C84700BE1BBF /* MCEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9DA1984C84700BE1BBF /* MCEpisode.m */; };
-		81665805815743B5997ED31A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDF13328EF748B29194D191 /* libPods.a */; };
-		ADEC898F6462DE56863CAB41 /* libPods-RealmJSONDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A1642BA9F25BE4513A1B64 /* libPods-RealmJSONDemo.a */; };
-		C823FFD61CE07B523926BD42 /* libPods-RealmJSONDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 823A6F5B8987B7C9277B4380 /* libPods-RealmJSONDemoTests.a */; };
+		368AF10C47D1E772DFB2C15C /* libPods-RealmJSONDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF74267E42140EEBEB7F606D /* libPods-RealmJSONDemoTests.a */; };
+		5CD24DA414966E6D81F2EA1D /* libPods-RealmJSONDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE55D6B872579ED604B0436 /* libPods-RealmJSONDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B516C38652AC3168B63E14F /* Pods-RealmJSONDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		1EF2988E0D4955BC37C2AB0C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		34D5F99B1984ACD900BE1BBF /* RealmJSONDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmJSONDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D5F99E1984ACD900BE1BBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		34D5F9A01984ACD900BE1BBF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,13 +58,12 @@
 		34D5F9D71984AEE300BE1BBF /* MCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTableViewController.m; sourceTree = "<group>"; };
 		34D5F9D91984C84700BE1BBF /* MCEpisode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCEpisode.h; sourceTree = "<group>"; };
 		34D5F9DA1984C84700BE1BBF /* MCEpisode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCEpisode.m; sourceTree = "<group>"; };
-		79A1642BA9F25BE4513A1B64 /* libPods-RealmJSONDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmJSONDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		823A6F5B8987B7C9277B4380 /* libPods-RealmJSONDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmJSONDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		84170847149B772AFFF13A18 /* Pods-RealmJSONDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		970782E9E7A985538894C200 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		C54F13710D84886045B0B411 /* Pods-RealmJSONDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo.release.xcconfig"; sourceTree = "<group>"; };
-		CCDF13328EF748B29194D191 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F76883BD9F4603B0BFA7A60E /* Pods-RealmJSONDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB3BA521F1D4ED82A9BB1E4 /* Pods-RealmJSONDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7EE55D6B872579ED604B0436 /* libPods-RealmJSONDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmJSONDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8408DFDBDFEECB88000767FD /* Pods-RealmJSONDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB92EEA98EAC7EDC768A9C51 /* Pods-RealmJSONDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF74267E42140EEBEB7F606D /* libPods-RealmJSONDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RealmJSONDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A66EBBE781054C0ED0ED2C /* Pods-RealmJSONDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmJSONDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +74,7 @@
 				34D5F9A11984ACD900BE1BBF /* CoreGraphics.framework in Frameworks */,
 				34D5F9A31984ACD900BE1BBF /* UIKit.framework in Frameworks */,
 				34D5F99F1984ACD900BE1BBF /* Foundation.framework in Frameworks */,
-				81665805815743B5997ED31A /* libPods.a in Frameworks */,
-				ADEC898F6462DE56863CAB41 /* libPods-RealmJSONDemo.a in Frameworks */,
+				5CD24DA414966E6D81F2EA1D /* libPods-RealmJSONDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +85,7 @@
 				34D5F9C11984ACD900BE1BBF /* XCTest.framework in Frameworks */,
 				34D5F9C31984ACD900BE1BBF /* UIKit.framework in Frameworks */,
 				34D5F9C21984ACD900BE1BBF /* Foundation.framework in Frameworks */,
-				C823FFD61CE07B523926BD42 /* libPods-RealmJSONDemoTests.a in Frameworks */,
+				368AF10C47D1E772DFB2C15C /* libPods-RealmJSONDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +99,7 @@
 				34D5F9C61984ACD900BE1BBF /* RealmJSONDemoTests */,
 				34D5F99D1984ACD900BE1BBF /* Frameworks */,
 				34D5F99C1984ACD900BE1BBF /* Products */,
-				9290BFDD1548386FF432BF83 /* Pods */,
+				47E6174E0B4E295FB2A97E66 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,9 +119,8 @@
 				34D5F9A01984ACD900BE1BBF /* CoreGraphics.framework */,
 				34D5F9A21984ACD900BE1BBF /* UIKit.framework */,
 				34D5F9C01984ACD900BE1BBF /* XCTest.framework */,
-				CCDF13328EF748B29194D191 /* libPods.a */,
-				79A1642BA9F25BE4513A1B64 /* libPods-RealmJSONDemo.a */,
-				823A6F5B8987B7C9277B4380 /* libPods-RealmJSONDemoTests.a */,
+				7EE55D6B872579ED604B0436 /* libPods-RealmJSONDemo.a */,
+				DF74267E42140EEBEB7F606D /* libPods-RealmJSONDemoTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -176,15 +170,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9290BFDD1548386FF432BF83 /* Pods */ = {
+		47E6174E0B4E295FB2A97E66 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1EF2988E0D4955BC37C2AB0C /* Pods.debug.xcconfig */,
-				970782E9E7A985538894C200 /* Pods.release.xcconfig */,
-				84170847149B772AFFF13A18 /* Pods-RealmJSONDemo.debug.xcconfig */,
-				C54F13710D84886045B0B411 /* Pods-RealmJSONDemo.release.xcconfig */,
-				F76883BD9F4603B0BFA7A60E /* Pods-RealmJSONDemoTests.debug.xcconfig */,
-				1B516C38652AC3168B63E14F /* Pods-RealmJSONDemoTests.release.xcconfig */,
+				E7A66EBBE781054C0ED0ED2C /* Pods-RealmJSONDemo.debug.xcconfig */,
+				7EB3BA521F1D4ED82A9BB1E4 /* Pods-RealmJSONDemo.release.xcconfig */,
+				8408DFDBDFEECB88000767FD /* Pods-RealmJSONDemoTests.debug.xcconfig */,
+				CB92EEA98EAC7EDC768A9C51 /* Pods-RealmJSONDemoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -196,12 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34D5F9D01984ACD900BE1BBF /* Build configuration list for PBXNativeTarget "RealmJSONDemo" */;
 			buildPhases = (
-				90A24D59A82C40FDA4D09950 /* [CP] Check Pods Manifest.lock */,
+				FE1C19E898FCBC6899837FBD /* [CP] Check Pods Manifest.lock */,
 				34D5F9971984ACD900BE1BBF /* Sources */,
 				34D5F9981984ACD900BE1BBF /* Frameworks */,
 				34D5F9991984ACD900BE1BBF /* Resources */,
-				F0A39AD6E14A4087B2748160 /* [CP] Copy Pods Resources */,
-				0B3A5DEA6D40FF52C3C70636 /* [CP] Embed Pods Frameworks */,
+				AB49DA68767214E2BA503979 /* [CP] Embed Pods Frameworks */,
+				62ECCC92665FA6A54242A6C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,12 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34D5F9D31984ACD900BE1BBF /* Build configuration list for PBXNativeTarget "RealmJSONDemoTests" */;
 			buildPhases = (
-				5F0E05C77442DBDD7050F9B4 /* [CP] Check Pods Manifest.lock */,
+				BA570FB62B94542F636B3647 /* [CP] Check Pods Manifest.lock */,
 				34D5F9BB1984ACD900BE1BBF /* Sources */,
 				34D5F9BC1984ACD900BE1BBF /* Frameworks */,
 				34D5F9BD1984ACD900BE1BBF /* Resources */,
-				8F724013D381004255E6FBAC /* [CP] Embed Pods Frameworks */,
-				33993318F9B4381F0DC4A66A /* [CP] Copy Pods Resources */,
+				6D7C4EF867BAEF4E68B083C4 /* [CP] Embed Pods Frameworks */,
+				9FE92E56DA625E9B34B1904D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,7 +232,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MC;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Matthew Cheok";
 				TargetAttributes = {
 					34D5F9BE1984ACD900BE1BBF = {
@@ -289,7 +281,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B3A5DEA6D40FF52C3C70636 /* [CP] Embed Pods Frameworks */ = {
+		62ECCC92665FA6A54242A6C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D7C4EF867BAEF4E68B083C4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -301,10 +308,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		33993318F9B4381F0DC4A66A /* [CP] Copy Pods Resources */ = {
+		9FE92E56DA625E9B34B1904D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,7 +326,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5F0E05C77442DBDD7050F9B4 /* [CP] Check Pods Manifest.lock */ = {
+		AB49DA68767214E2BA503979 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA570FB62B94542F636B3647 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,22 +359,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8F724013D381004255E6FBAC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		90A24D59A82C40FDA4D09950 /* [CP] Check Pods Manifest.lock */ = {
+		FE1C19E898FCBC6899837FBD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,21 +375,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0A39AD6E14A4087B2748160 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -458,13 +450,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -477,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -496,20 +494,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -517,13 +520,14 @@
 		};
 		34D5F9D11984ACD900BE1BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84170847149B772AFFF13A18 /* Pods-RealmJSONDemo.debug.xcconfig */;
+			baseConfigurationReference = E7A66EBBE781054C0ED0ED2C /* Pods-RealmJSONDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RealmJSONDemo/RealmJSONDemo-Prefix.pch";
 				INFOPLIST_FILE = "RealmJSONDemo/RealmJSONDemo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -531,13 +535,14 @@
 		};
 		34D5F9D21984ACD900BE1BBF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C54F13710D84886045B0B411 /* Pods-RealmJSONDemo.release.xcconfig */;
+			baseConfigurationReference = 7EB3BA521F1D4ED82A9BB1E4 /* Pods-RealmJSONDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RealmJSONDemo/RealmJSONDemo-Prefix.pch";
 				INFOPLIST_FILE = "RealmJSONDemo/RealmJSONDemo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -545,7 +550,7 @@
 		};
 		34D5F9D41984ACD900BE1BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F76883BD9F4603B0BFA7A60E /* Pods-RealmJSONDemoTests.debug.xcconfig */;
+			baseConfigurationReference = 8408DFDBDFEECB88000767FD /* Pods-RealmJSONDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealmJSONDemo.app/RealmJSONDemo";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -560,6 +565,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "RealmJSONDemoTests/RealmJSONDemoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -568,7 +574,7 @@
 		};
 		34D5F9D51984ACD900BE1BBF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B516C38652AC3168B63E14F /* Pods-RealmJSONDemoTests.release.xcconfig */;
+			baseConfigurationReference = CB92EEA98EAC7EDC768A9C51 /* Pods-RealmJSONDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealmJSONDemo.app/RealmJSONDemo";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -579,6 +585,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RealmJSONDemo/RealmJSONDemo-Prefix.pch";
 				INFOPLIST_FILE = "RealmJSONDemoTests/RealmJSONDemoTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

@@ -163,7 +163,9 @@ static NSInteger const kCreateBatchSize = 100;
     NSDictionary *dictionary;
     SEL preprocessingSel = NSSelectorFromString(@"preprocessedJSON:");
     if ([self respondsToSelector:preprocessingSel]) {
-        dictionary = [self performSelector:preprocessingSel withObject:origDict];
+        IMP imp = [self methodForSelector:preprocessingSel];
+        NSDictionary* (*func)(id, SEL, NSDictionary *) = (void *)imp;
+        dictionary = func(self, preprocessingSel, origDict);
     } else {
         dictionary = origDict;
     }
@@ -224,9 +226,10 @@ static NSInteger const kCreateBatchSize = 100;
 - (id)mc_createJSONDictionary {
 	NSMutableDictionary *result = [NSMutableDictionary dictionary];
     NSDictionary *mapping;
+    
     SEL selector = NSSelectorFromString(@"JSONOutboundMappingDictionary");
     if ([self respondsToSelector:selector]) {
-        mapping = [self performSelector:selector];
+        mapping = MCValueFromInvocation(self, selector);
     } else {
         mapping = [[self class] mc_outboundMapping];
     }

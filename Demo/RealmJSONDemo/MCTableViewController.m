@@ -37,7 +37,7 @@
             NSArray *result = [MCEpisode createOrUpdateInRealm:realm withJSONArray:array];
             [realm commitWriteTransaction];
             
-            NSLog(@"result: %@", result);
+            NSLog(@"results count: %@", @(result.count));
         });
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"Error: %@", error);
@@ -47,6 +47,8 @@
 - (void)refreshData {
     self.results = [[MCEpisode allObjectsInRealm:[RLMRealm defaultRealm]] sortedResultsUsingKeyPath:@"publishedDate" ascending:NO];
 	[self.tableView reloadData];
+    
+    NSLog(@"first episode %@", [[self.results firstObject] JSONDictionary]);
 }
 
 #pragma mark - UIViewController

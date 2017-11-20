@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'VLRealm+JSON'
-  s.version  = '0.3.1'
+  s.version  = '0.3.2'
   s.ios.deployment_target     = '7.0'
   s.osx.deployment_target     = '10.9'
   s.watchos.deployment_target = '2.0'

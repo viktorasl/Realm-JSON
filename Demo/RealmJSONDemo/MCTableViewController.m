@@ -10,7 +10,7 @@
 #import "MCEpisode.h"
 
 #import <Realm/Realm.h>
-#import <Realm+JSON/RLMObject+JSON.h>
+#import <VLRealm+JSON/RLMObject+JSON.h>
 
 #import <AFNetworking.h>
 #import <UIImageView+AFNetworking.h>
@@ -27,9 +27,9 @@
 #pragma mark - Methods
 
 - (IBAction)reloadData {
-	AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-	[manager GET:@"https://www.nsscreencast.com/api/episodes.json" parameters:nil success: ^(AFHTTPRequestOperation *operation, id responseObject) {
-	    NSArray *array = responseObject[@"episodes"];
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    [session GET:@"https://www.nsscreencast.com/api/episodes.json" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSArray *array = responseObject[@"episodes"];
         dispatch_async(dispatch_get_main_queue(), ^{
             RLMRealm *realm = [RLMRealm defaultRealm];
             
@@ -39,13 +39,13 @@
             
             NSLog(@"result: %@", result);
         });
-	} failure: ^(AFHTTPRequestOperation *operation, NSError *error) {
-	    NSLog(@"Error: %@", error);
-	}];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"Error: %@", error);
+    }];
 }
 
 - (void)refreshData {
-	self.results = [[MCEpisode allObjectsInRealm:[RLMRealm defaultRealm]] sortedResultsUsingProperty:@"publishedDate" ascending:NO];
+    self.results = [[MCEpisode allObjectsInRealm:[RLMRealm defaultRealm]] sortedResultsUsingKeyPath:@"publishedDate" ascending:NO];
 	[self.tableView reloadData];
 }
 

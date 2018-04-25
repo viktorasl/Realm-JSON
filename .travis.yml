@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode9.3
+before_install:
+  - pushd Demo; pod install
+script:
+- set -o pipefail
+- pushd Demo; xcodebuild build -scheme RealmJSONDemo -workspace RealmJSONDemo.xcworkspace -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone X,OS=11.3" -quiet

@@ -1,6 +1,7 @@
 Realm+JSON ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 ==========
 
+[![Build Status](https://travis-ci.org/viktorasl/Realm-JSON.svg)](https://travis-ci.org/viktorasl/Realm-JSON)
 [![Badge w/ Version](https://cocoapod-badges.herokuapp.com/v/VLRealm+JSON/badge.png)](https://cocoapods.org/pods/VLRealm+JSON)
 [![Badge w/ Platform](https://cocoapod-badges.herokuapp.com/p/VLRealm+JSON/badge.svg)](https://cocoapods.org/pods/VLRealm+JSON)
 

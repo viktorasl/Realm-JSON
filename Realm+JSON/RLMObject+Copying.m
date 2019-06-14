@@ -46,8 +46,7 @@
     
     for (RLMProperty *property in self.objectSchema.properties) {
         
-        if (property.type != RLMPropertyTypeArray) {
-
+        if (!property.array) {
             // asume data
             value = [object valueForKeyPath:property.name];
             selfValue = [self valueForKeyPath:property.name];
@@ -76,7 +75,7 @@
     
     for (RLMProperty *property in self.objectSchema.properties) {
 
-        if (property.type == RLMPropertyTypeArray) {
+        if (property.array) {
             RLMArray *thisArray = [self valueForKeyPath:property.name];
             RLMArray *newArray = [object valueForKeyPath:property.name];
             

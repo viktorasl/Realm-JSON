@@ -388,13 +388,8 @@ static NSInteger const kCreateBatchSize = 100;
 					}
 				}
 				
-				switch (objectProp.type) {
-					case RLMPropertyTypeArray: {
-						return [RLMArray class];
-					}
-					default: {
-						break;
-					}
+				if (objectProp.type == RLMPropertyTypeObject && objectProp.array) {
+					return [RLMArray class];
 				}
 			}
 

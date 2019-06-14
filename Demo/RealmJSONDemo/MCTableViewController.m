@@ -8,9 +8,11 @@
 
 #import "MCTableViewController.h"
 #import "MCEpisode.h"
+#import "MCEpisodesPage.h"
 
 #import <Realm/Realm.h>
 #import <VLRealm+JSON/RLMObject+JSON.h>
+#import <VLRealm+JSON/RLMObject+Copying.h>
 
 #import <AFNetworking.h>
 #import <UIImageView+AFNetworking.h>
@@ -29,16 +31,20 @@
 - (IBAction)reloadData {
     AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
     [session GET:@"https://www.nsscreencast.com/api/episodes.json" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSArray *array = responseObject[@"episodes"];
-        dispatch_async(dispatch_get_main_queue(), ^{
-            RLMRealm *realm = [RLMRealm defaultRealm];
-            
-            [realm beginWriteTransaction];
-            NSArray *result = [MCEpisode createOrUpdateInRealm:realm withJSONArray:array];
-            [realm commitWriteTransaction];
-            
-            NSLog(@"results count: %@", @(result.count));
-        });
+        if ([responseObject isKindOfClass:[NSDictionary class]]) {
+            MCEpisodesPage *page = [[MCEpisodesPage alloc] initWithJSONDictionary:responseObject];
+            [page shallowCopy];
+            [page deepCopy];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                RLMRealm *realm = [RLMRealm defaultRealm];
+                
+                [realm beginWriteTransaction];
+                NSArray *result = [MCEpisode createOrUpdateInRealm:realm withJSONArray:[page.episodes JSONArray]];
+                [realm commitWriteTransaction];
+                
+                NSLog(@"results count: %@", @(result.count));
+            });
+        }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"Error: %@", error);
     }];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03F5EA6422B37A6D003416EE /* MCEpisodesPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F5EA6322B37A6D003416EE /* MCEpisodesPage.m */; };
 		34D5F99F1984ACD900BE1BBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D5F99E1984ACD900BE1BBF /* Foundation.framework */; };
 		34D5F9A11984ACD900BE1BBF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D5F9A01984ACD900BE1BBF /* CoreGraphics.framework */; };
 		34D5F9A31984ACD900BE1BBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D5F9A21984ACD900BE1BBF /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03F5EA6222B37A6D003416EE /* MCEpisodesPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCEpisodesPage.h; sourceTree = "<group>"; };
+		03F5EA6322B37A6D003416EE /* MCEpisodesPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCEpisodesPage.m; sourceTree = "<group>"; };
 		34D5F99B1984ACD900BE1BBF /* RealmJSONDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmJSONDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D5F99E1984ACD900BE1BBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		34D5F9A01984ACD900BE1BBF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -137,6 +140,8 @@
 				34D5F9DA1984C84700BE1BBF /* MCEpisode.m */,
 				34D5F9B91984ACD900BE1BBF /* Images.xcassets */,
 				34D5F9A51984ACD900BE1BBF /* Supporting Files */,
+				03F5EA6222B37A6D003416EE /* MCEpisodesPage.h */,
+				03F5EA6322B37A6D003416EE /* MCEpisodesPage.m */,
 			);
 			path = RealmJSONDemo;
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F5EA6422B37A6D003416EE /* MCEpisodesPage.m in Sources */,
 				34D5F9D81984AEE300BE1BBF /* MCTableViewController.m in Sources */,
 				34D5F9AF1984ACD900BE1BBF /* MCAppDelegate.m in Sources */,
 				34D5F9AB1984ACD900BE1BBF /* main.m in Sources */,

@@ -42,7 +42,6 @@ static NSString *MCTypeStringFromPropertyKey(Class class, NSString *key) {
 
 @interface NSString (MCJSON)
 
-- (NSString *)snakeToCamelCase;
 - (NSString *)camelToSnakeCase;
 
 @end
@@ -423,23 +422,6 @@ static NSInteger const kCreateBatchSize = 100;
 @end
 
 @implementation NSString (MCJSON)
-
-- (NSString *)snakeToCamelCase {
-	NSScanner *scanner = [NSScanner scannerWithString:self];
-	NSCharacterSet *underscoreSet = [NSCharacterSet characterSetWithCharactersInString:@"_"];
-	scanner.charactersToBeSkipped = underscoreSet;
-
-	NSMutableString *result = [NSMutableString string];
-	NSString *buffer = nil;
-
-	while (![scanner isAtEnd]) {
-		BOOL atStartPosition = scanner.scanLocation == 0;
-		[scanner scanUpToCharactersFromSet:underscoreSet intoString:&buffer];
-		[result appendString:atStartPosition ? buffer:[buffer capitalizedString]];
-	}
-
-	return result;
-}
 
 - (NSString *)camelToSnakeCase {
 	NSScanner *scanner = [NSScanner scannerWithString:self];

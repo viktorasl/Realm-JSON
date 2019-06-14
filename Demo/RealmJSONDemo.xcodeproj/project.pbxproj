@@ -192,8 +192,6 @@
 				34D5F9971984ACD900BE1BBF /* Sources */,
 				34D5F9981984ACD900BE1BBF /* Frameworks */,
 				34D5F9991984ACD900BE1BBF /* Resources */,
-				AB49DA68767214E2BA503979 /* [CP] Embed Pods Frameworks */,
-				62ECCC92665FA6A54242A6C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,8 +210,6 @@
 				34D5F9BB1984ACD900BE1BBF /* Sources */,
 				34D5F9BC1984ACD900BE1BBF /* Frameworks */,
 				34D5F9BD1984ACD900BE1BBF /* Resources */,
-				6D7C4EF867BAEF4E68B083C4 /* [CP] Embed Pods Frameworks */,
-				9FE92E56DA625E9B34B1904D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,6 +241,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -281,66 +278,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		62ECCC92665FA6A54242A6C9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6D7C4EF867BAEF4E68B083C4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9FE92E56DA625E9B34B1904D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemoTests/Pods-RealmJSONDemoTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB49DA68767214E2BA503979 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmJSONDemo/Pods-RealmJSONDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BA570FB62B94542F636B3647 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

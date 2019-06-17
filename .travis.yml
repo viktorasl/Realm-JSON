@@ -1,7 +1,11 @@
 language: objective-c
-osx_image: xcode9.3
-before_install:
-  - pushd Demo; pod install
-script:
-- set -o pipefail
-- pushd Demo; xcodebuild build -scheme RealmJSONDemo -workspace RealmJSONDemo.xcworkspace -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone X,OS=11.3" -quiet
+osx_image: xcode10.2
+jobs:
+  include:
+    - stage: "Build framework"
+      install: carthage build --platform iOS
+      script: xcodebuild build -scheme Realm+JSON -project Realm+JSON.xcodeproj -sdk iphonesimulator -quiet
+
+    - stage: "Build demo project"
+      install: carthage build --no-skip-current --platform iOS; pushd Demo; bundle install; bundle exec pod install
+      script: pushd Demo; xcodebuild build -scheme RealmJSONDemo -workspace RealmJSONDemo.xcworkspace -sdk iphonesimulator -quiet

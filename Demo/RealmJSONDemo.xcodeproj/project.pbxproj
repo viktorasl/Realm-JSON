@@ -172,8 +172,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34D5F9D01984ACD900BE1BBF /* Build configuration list for PBXNativeTarget "RealmJSONDemo" */;
 			buildPhases = (
-				032FE06922B7BFE60027426D /* Carthage */,
 				FE1C19E898FCBC6899837FBD /* [CP] Check Pods Manifest.lock */,
+				032FE06922B7BFE60027426D /* Carthage */,
 				34D5F9971984ACD900BE1BBF /* Sources */,
 				34D5F9981984ACD900BE1BBF /* Frameworks */,
 				34D5F9991984ACD900BE1BBF /* Resources */,

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Matthew Cheok. All rights reserved.
 //
 
-#import <Realm/Realm.h>
+@import Realm;
 
 typedef NS_ENUM(NSInteger, MCEpisodeType) {
     MCEpisodeTypeFree = 0,

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032FE06722B7BF9B0027426D /* Realm_JSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032FE06522B7BF9B0027426D /* Realm_JSON.framework */; };
+		032FE06822B7BF9B0027426D /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032FE06622B7BF9B0027426D /* Realm.framework */; };
 		03F5EA6422B37A6D003416EE /* MCEpisodesPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F5EA6322B37A6D003416EE /* MCEpisodesPage.m */; };
 		34D5F99F1984ACD900BE1BBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D5F99E1984ACD900BE1BBF /* Foundation.framework */; };
 		34D5F9A11984ACD900BE1BBF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D5F9A01984ACD900BE1BBF /* CoreGraphics.framework */; };
@@ -16,28 +18,14 @@
 		34D5F9AF1984ACD900BE1BBF /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9AE1984ACD900BE1BBF /* MCAppDelegate.m */; };
 		34D5F9B21984ACD900BE1BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34D5F9B01984ACD900BE1BBF /* Main.storyboard */; };
 		34D5F9BA1984ACD900BE1BBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34D5F9B91984ACD900BE1BBF /* Images.xcassets */; };
-		34D5F9C11984ACD900BE1BBF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D5F9C01984ACD900BE1BBF /* XCTest.framework */; };
-		34D5F9C21984ACD900BE1BBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D5F99E1984ACD900BE1BBF /* Foundation.framework */; };
-		34D5F9C31984ACD900BE1BBF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D5F9A21984ACD900BE1BBF /* UIKit.framework */; };
-		34D5F9CB1984ACD900BE1BBF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34D5F9C91984ACD900BE1BBF /* InfoPlist.strings */; };
-		34D5F9CD1984ACD900BE1BBF /* RealmJSONDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9CC1984ACD900BE1BBF /* RealmJSONDemoTests.m */; };
 		34D5F9D81984AEE300BE1BBF /* MCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9D71984AEE300BE1BBF /* MCTableViewController.m */; };
 		34D5F9DB1984C84700BE1BBF /* MCEpisode.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D5F9DA1984C84700BE1BBF /* MCEpisode.m */; };
-		368AF10C47D1E772DFB2C15C /* libPods-RealmJSONDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF74267E42140EEBEB7F606D /* libPods-RealmJSONDemoTests.a */; };
 		5CD24DA414966E6D81F2EA1D /* libPods-RealmJSONDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EE55D6B872579ED604B0436 /* libPods-RealmJSONDemo.a */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		34D5F9C41984ACD900BE1BBF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 34D5F9931984ACD800BE1BBF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 34D5F99A1984ACD900BE1BBF;
-			remoteInfo = RealmJSONDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		032FE06522B7BF9B0027426D /* Realm_JSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm_JSON.framework; path = ../Carthage/Build/iOS/Realm_JSON.framework; sourceTree = "<group>"; };
+		032FE06622B7BF9B0027426D /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = ../Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		03F5EA6222B37A6D003416EE /* MCEpisodesPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCEpisodesPage.h; sourceTree = "<group>"; };
 		03F5EA6322B37A6D003416EE /* MCEpisodesPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCEpisodesPage.m; sourceTree = "<group>"; };
 		34D5F99B1984ACD900BE1BBF /* RealmJSONDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmJSONDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,7 +40,6 @@
 		34D5F9AE1984ACD900BE1BBF /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
 		34D5F9B11984ACD900BE1BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34D5F9B91984ACD900BE1BBF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		34D5F9BF1984ACD900BE1BBF /* RealmJSONDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmJSONDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D5F9C01984ACD900BE1BBF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		34D5F9C81984ACD900BE1BBF /* RealmJSONDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RealmJSONDemoTests-Info.plist"; sourceTree = "<group>"; };
 		34D5F9CA1984ACD900BE1BBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -74,21 +61,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032FE06722B7BF9B0027426D /* Realm_JSON.framework in Frameworks */,
+				032FE06822B7BF9B0027426D /* Realm.framework in Frameworks */,
 				34D5F9A11984ACD900BE1BBF /* CoreGraphics.framework in Frameworks */,
 				34D5F9A31984ACD900BE1BBF /* UIKit.framework in Frameworks */,
 				34D5F99F1984ACD900BE1BBF /* Foundation.framework in Frameworks */,
 				5CD24DA414966E6D81F2EA1D /* libPods-RealmJSONDemo.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		34D5F9BC1984ACD900BE1BBF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34D5F9C11984ACD900BE1BBF /* XCTest.framework in Frameworks */,
-				34D5F9C31984ACD900BE1BBF /* UIKit.framework in Frameworks */,
-				34D5F9C21984ACD900BE1BBF /* Foundation.framework in Frameworks */,
-				368AF10C47D1E772DFB2C15C /* libPods-RealmJSONDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				34D5F99B1984ACD900BE1BBF /* RealmJSONDemo.app */,
-				34D5F9BF1984ACD900BE1BBF /* RealmJSONDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +95,8 @@
 		34D5F99D1984ACD900BE1BBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				032FE06522B7BF9B0027426D /* Realm_JSON.framework */,
+				032FE06622B7BF9B0027426D /* Realm.framework */,
 				34D5F99E1984ACD900BE1BBF /* Foundation.framework */,
 				34D5F9A01984ACD900BE1BBF /* CoreGraphics.framework */,
 				34D5F9A21984ACD900BE1BBF /* UIKit.framework */,
@@ -193,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 34D5F9D01984ACD900BE1BBF /* Build configuration list for PBXNativeTarget "RealmJSONDemo" */;
 			buildPhases = (
+				032FE06922B7BFE60027426D /* Carthage */,
 				FE1C19E898FCBC6899837FBD /* [CP] Check Pods Manifest.lock */,
 				34D5F9971984ACD900BE1BBF /* Sources */,
 				34D5F9981984ACD900BE1BBF /* Frameworks */,
@@ -207,25 +187,6 @@
 			productReference = 34D5F99B1984ACD900BE1BBF /* RealmJSONDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		34D5F9BE1984ACD900BE1BBF /* RealmJSONDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 34D5F9D31984ACD900BE1BBF /* Build configuration list for PBXNativeTarget "RealmJSONDemoTests" */;
-			buildPhases = (
-				BA570FB62B94542F636B3647 /* [CP] Check Pods Manifest.lock */,
-				34D5F9BB1984ACD900BE1BBF /* Sources */,
-				34D5F9BC1984ACD900BE1BBF /* Frameworks */,
-				34D5F9BD1984ACD900BE1BBF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				34D5F9C51984ACD900BE1BBF /* PBXTargetDependency */,
-			);
-			name = RealmJSONDemoTests;
-			productName = RealmJSONDemoTests;
-			productReference = 34D5F9BF1984ACD900BE1BBF /* RealmJSONDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -235,11 +196,6 @@
 				CLASSPREFIX = MC;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Matthew Cheok";
-				TargetAttributes = {
-					34D5F9BE1984ACD900BE1BBF = {
-						TestTargetID = 34D5F99A1984ACD900BE1BBF;
-					};
-				};
 			};
 			buildConfigurationList = 34D5F9961984ACD800BE1BBF /* Build configuration list for PBXProject "RealmJSONDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -256,7 +212,6 @@
 			projectRoot = "";
 			targets = (
 				34D5F99A1984ACD900BE1BBF /* RealmJSONDemo */,
-				34D5F9BE1984ACD900BE1BBF /* RealmJSONDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -272,34 +227,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34D5F9BD1984ACD900BE1BBF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34D5F9CB1984ACD900BE1BBF /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BA570FB62B94542F636B3647 /* [CP] Check Pods Manifest.lock */ = {
+		032FE06922B7BFE60027426D /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+			inputFileListPaths = (
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			inputPaths = (
+				"$(SRCROOT)/../Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/../Carthage/Build/iOS/Realm_JSON.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RealmJSONDemoTests-checkManifestLockResult.txt",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Realm_JSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		FE1C19E898FCBC6899837FBD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -334,23 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34D5F9BB1984ACD900BE1BBF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				34D5F9CD1984ACD900BE1BBF /* RealmJSONDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		34D5F9C51984ACD900BE1BBF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 34D5F99A1984ACD900BE1BBF /* RealmJSONDemo */;
-			targetProxy = 34D5F9C41984ACD900BE1BBF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		34D5F9A71984ACD900BE1BBF /* InfoPlist.strings */ = {
@@ -467,9 +402,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RealmJSONDemo/RealmJSONDemo-Prefix.pch";
 				INFOPLIST_FILE = "RealmJSONDemo/RealmJSONDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -482,56 +419,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Carthage/Build/iOS";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RealmJSONDemo/RealmJSONDemo-Prefix.pch";
 				INFOPLIST_FILE = "RealmJSONDemo/RealmJSONDemo-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		34D5F9D41984ACD900BE1BBF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8408DFDBDFEECB88000767FD /* Pods-RealmJSONDemoTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealmJSONDemo.app/RealmJSONDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RealmJSONDemo/RealmJSONDemo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "RealmJSONDemoTests/RealmJSONDemoTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		34D5F9D51984ACD900BE1BBF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB92EEA98EAC7EDC768A9C51 /* Pods-RealmJSONDemoTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RealmJSONDemo.app/RealmJSONDemo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RealmJSONDemo/RealmJSONDemo-Prefix.pch";
-				INFOPLIST_FILE = "RealmJSONDemoTests/RealmJSONDemoTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewcheok.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -552,15 +447,6 @@
 			buildConfigurations = (
 				34D5F9D11984ACD900BE1BBF /* Debug */,
 				34D5F9D21984ACD900BE1BBF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		34D5F9D31984ACD900BE1BBF /* Build configuration list for PBXNativeTarget "RealmJSONDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				34D5F9D41984ACD900BE1BBF /* Debug */,
-				34D5F9D51984ACD900BE1BBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

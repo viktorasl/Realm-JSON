@@ -6,7 +6,14 @@
 //  Copyright © 2019 io.github.viktorasl. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <Realm_JSON/RLMObject+JSON.h>
+#import <Realm_JSON/RLMObject+Copying.h>
+#import <Realm_JSON/MCJSONPrimaryKeyTransformer.h>
+#import <Realm_JSON/MCJSONNonNullStringTransformer.h>
+#import <Realm_JSON/MCJSONDateTransformer.h>
+#import <Realm_JSON/MCJSONValueTransformer.h>
 
 //! Project version number for Realm_JSON.
 FOUNDATION_EXPORT double Realm_JSONVersionNumber;

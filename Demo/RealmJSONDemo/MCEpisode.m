@@ -7,7 +7,7 @@
 //
 
 #import "MCEpisode.h"
-#import "RLMObject+JSON.h"
+@import Realm_JSON;
 
 @implementation MCEpisode
 

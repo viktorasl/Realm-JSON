@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		03F5EA7422B3BECA003416EE /* Realm_JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA7222B3BECA003416EE /* Realm_JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		03F5EA8622B3C047003416EE /* MCJSONNonNullStringTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA7A22B3C047003416EE /* MCJSONNonNullStringTransformer.h */; };
+		03F5EA8622B3C047003416EE /* MCJSONNonNullStringTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA7A22B3C047003416EE /* MCJSONNonNullStringTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03F5EA8722B3C047003416EE /* RLMObject+Copying.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F5EA7B22B3C047003416EE /* RLMObject+Copying.m */; };
-		03F5EA8822B3C047003416EE /* MCJSONPrimaryKeyTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA7C22B3C047003416EE /* MCJSONPrimaryKeyTransformer.h */; };
-		03F5EA8922B3C047003416EE /* RLMObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA7D22B3C047003416EE /* RLMObject+JSON.h */; };
+		03F5EA8822B3C047003416EE /* MCJSONPrimaryKeyTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA7C22B3C047003416EE /* MCJSONPrimaryKeyTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03F5EA8922B3C047003416EE /* RLMObject+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA7D22B3C047003416EE /* RLMObject+JSON.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03F5EA8A22B3C047003416EE /* RLMObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F5EA7E22B3C047003416EE /* RLMObject+JSON.m */; };
-		03F5EA8B22B3C047003416EE /* RLMObject+Copying.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA7F22B3C047003416EE /* RLMObject+Copying.h */; };
-		03F5EA8C22B3C047003416EE /* MCJSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA8022B3C047003416EE /* MCJSONValueTransformer.h */; };
+		03F5EA8B22B3C047003416EE /* RLMObject+Copying.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA7F22B3C047003416EE /* RLMObject+Copying.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03F5EA8C22B3C047003416EE /* MCJSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA8022B3C047003416EE /* MCJSONValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03F5EA8D22B3C047003416EE /* MCJSONNonNullStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F5EA8122B3C047003416EE /* MCJSONNonNullStringTransformer.m */; };
-		03F5EA8E22B3C047003416EE /* MCJSONDateTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA8222B3C047003416EE /* MCJSONDateTransformer.h */; };
+		03F5EA8E22B3C047003416EE /* MCJSONDateTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F5EA8222B3C047003416EE /* MCJSONDateTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03F5EA8F22B3C047003416EE /* MCJSONDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F5EA8322B3C047003416EE /* MCJSONDateTransformer.m */; };
 		03F5EA9022B3C047003416EE /* MCJSONPrimaryKeyTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F5EA8422B3C047003416EE /* MCJSONPrimaryKeyTransformer.m */; };
 		03F5EA9122B3C047003416EE /* MCJSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F5EA8522B3C047003416EE /* MCJSONValueTransformer.m */; };
@@ -124,7 +124,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03F5EA7722B3BECA003416EE /* Build configuration list for PBXNativeTarget "Realm+JSON" */;
 			buildPhases = (
-				03F5EA9522B3C2D9003416EE /* Carthage */,
 				03F5EA6A22B3BECA003416EE /* Headers */,
 				03F5EA6B22B3BECA003416EE /* Sources */,
 				03F5EA6C22B3BECA003416EE /* Frameworks */,
@@ -179,28 +178,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		03F5EA9522B3C2D9003416EE /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
-			);
-			name = Carthage;
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		03F5EA6B22B3BECA003416EE /* Sources */ = {
@@ -347,10 +324,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = "Realm+JSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,10 +349,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS";
 				INFOPLIST_FILE = "Realm+JSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

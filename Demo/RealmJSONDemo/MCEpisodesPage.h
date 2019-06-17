@@ -6,7 +6,7 @@
 //  Copyright © 2019 Matthew Cheok. All rights reserved.
 //
 
-#import <Realm/Realm.h>
+@import Realm;
 #import "MCEpisode.h"
 
 NS_ASSUME_NONNULL_BEGIN

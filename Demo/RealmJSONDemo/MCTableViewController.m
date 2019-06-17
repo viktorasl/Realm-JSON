@@ -10,9 +10,8 @@
 #import "MCEpisode.h"
 #import "MCEpisodesPage.h"
 
-#import <Realm/Realm.h>
-#import <VLRealm+JSON/RLMObject+JSON.h>
-#import <VLRealm+JSON/RLMObject+Copying.h>
+@import Realm;
+@import Realm_JSON;
 
 #import <AFNetworking.h>
 #import <UIImageView+AFNetworking.h>
@@ -39,7 +38,7 @@
                 RLMRealm *realm = [RLMRealm defaultRealm];
                 
                 [realm beginWriteTransaction];
-                NSArray *result = [MCEpisode createOrUpdateInRealm:realm withJSONArray:[page.episodes JSONArray]];
+                NSArray *result = [MCEpisode createOrUpdateInRealm:realm withJSONArray:responseObject[@"episodes"]];
                 [realm commitWriteTransaction];
                 
                 NSLog(@"results count: %@", @(result.count));

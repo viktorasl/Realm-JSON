@@ -8,4 +8,4 @@ jobs:
 
     - stage: "Build demo project"
       install: carthage build --no-skip-current --platform iOS; pushd Demo; bundle install; bundle exec pod install
-      script: pushd Demo; xcodebuild build -scheme RealmJSONDemo -workspace RealmJSONDemo.xcworkspace -sdk iphonesimulator -quiet
+      script: pushd Demo; xcodebuild build -configuration "Release" -scheme RealmJSONDemo -workspace RealmJSONDemo.xcworkspace -sdk iphonesimulator -quiet
